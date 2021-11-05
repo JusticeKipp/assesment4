@@ -7,6 +7,7 @@ let budget_amount = document.getElementById('budget_amount')
 let balance = document.getElementById("final_balance")
 let expenses_total = document.getElementById('expenses_total')
 let title = document.getElementById('title')
+let expense_value = document.getElementById('expense_value')
 
 function calc(){
     budget_amount.innerHTML = "$ " + budget.value
@@ -14,5 +15,6 @@ function calc(){
     title.innerHTML = expenses_title.value
     let final_balance = budget.value - expenses_amount.value
     balance.innerHTML = "$ " + final_balance
+    expense_value.innerHTML = "$ " + expenses_amount.value
 }
 
