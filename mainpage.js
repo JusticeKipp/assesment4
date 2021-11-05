@@ -10,7 +10,7 @@ let title = document.getElementById('title')
 let expense_value = document.getElementById('expense_value')
 
 function calc(){
-    /* Set Display Values */
+  /* Set Display Values */
     budget_amount.innerHTML = "$ " + budget.value
     expenses_total.innerHTML = "$ " + expenses_amount.value
     title.innerHTML = expenses_title.value
