@@ -1,3 +1,80 @@
+body{
+    background-color: rgb(250, 246, 239);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
 h2{
     text-transform: uppercase;
+}
+/*End of Header*/
+
+
+/*Left Flexboxes*/
+.input{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 500px;
+    height: 200px;
+}
+input{
+    border-radius: 2px;
+    height: 40px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+#border{
+    border: solid 2px rgb(58, 151, 50);
+    margin-bottom: 10%;
+}
+#border2{
+    border: solid 2px rgb(202, 53, 26);
+}
+.green{
+    border: 1px solid rgb(58, 151, 50);
+}
+.red{
+    border: 1px solid rgb(202, 53, 26);
+}
+a{
+    text-decoration: none;
+    border: 1px solid;
+    margin-right: 80%;
+    margin-top: 20px;
+    padding-left: 12px;
+}
+#border a{
+    border-color: rgb(58, 151, 50);
+    color: rgb(58, 151, 50);
+}
+#border2 a{
+    border-color: rgb(202, 53, 26);
+    color: rgb(202, 53, 26);
+}
+/*End of Left Flexboxes*/
+
+/*Right Flexbox*/
+#total{
+    margin-left: 75px;
+}
+ion-icon{
+    color: rgb(40, 40, 146);
+    font-size: 75px;
+}
+#budget{
+    color: rgb(58, 151, 50);
+}
+#expense{
+    color: rgb(202, 53, 26);
+}
+.col{
+    margin-right: 5%;
+    width: 200px;
 }

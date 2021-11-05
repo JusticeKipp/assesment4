@@ -2,43 +2,77 @@
     <head>
         <title>Main Page</title>
         <link rel="stylesheet" href="mainpage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <h2>Budget App</h2>
 
-        <div>
+        <section class="row">
             <div>
+                <div class="input" id="border">
+                    <p>Please Enter Your Budget</p>
+                    <input class="green">
+                    <a href="#"> Calculate </a>
+                </div>
+
+                <div class="input" id="border2">
+                    <p>Please Enter Your Expense</p>
+                    <input class="red">
+                    <p>Please Enter Expense Amount</p>
+                    <input class="red">
+                    <a href="#"> Calculate </a>
+                </div>
                 <p>Please Enter Your Budget</p>
-                <input>
-                <button>Calculate</button>
+                <input id="budget">
             </div>
 
             <div>
                 <p>Please Enter Your Expense</p>
-                <input>
+                <input id="expenses_title">
                 <p>Please Enter Expense Amount</p>
-                <input>
-                <button>Calculate</button>
+                <input id="expenses_amount">
+                <button id="calculate" onclick="calc()">Calculate</button>
             </div>
-        </div>
 
+            <div class="row" id="total">
+                <div class="col">
+                    <h2>Budget</h2>
+                    <ion-icon name="cash-outline"></ion-icon>
+                    <h2 id="budget">$0</h2>
+                    <p>Expense Title</p>
+                </div>
+                <div class="col">
+                    <h2>Expenses</h2>
+                    <ion-icon name="card-outline"></ion-icon>
+                    <h2 id="expense">$0</h2>
+                    <p>Expense Value</p>
+                </div>
+                <div class="col">
+                    <h2>Balance</h2>
+                    <ion-icon name="logo-usd"></ion-icon>
+                    <h2>$0</h2>
+                </div>
         <div>
             <div>
                 <h3>Budget</h3>
-                <h2>$0</h2>
-                <p>Expense Title</p>
+                <h2 id="budget_amount">$0</h2>
+                <p id="title">Expense Title</p>
             </div>
             <div>
                 <h3>Expenses</h3>
-                <h2>$0</h2>
+                <h2 id="expenses_total">$0</h2>
+                <p id="expense_value">Expense Value</p>
                 <p>Expense Value</p>
             </div>
             <div>
                 <h3>Balance</h3>
-                <h2>$0</h2>
+                <h2 id="final_balance">$0</h2>
             </div>
-        </div>
+        </section>
 
         <script src="mainpage.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>
