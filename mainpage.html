@@ -2,43 +2,49 @@
     <head>
         <title>Main Page</title>
         <link rel="stylesheet" href="mainpage.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <h2>Budget App</h2>
-
-        <div>
-            <div>
+        <div class="row">
+        <div class="col">
+            <div class="input" id="border">
                 <p>Please Enter Your Budget</p>
-                <input id="budget">
+                <input class="green" id="budget">
             </div>
 
-            <div>
+            <div class="input" id="border2">
                 <p>Please Enter Your Expense</p>
-                <input id="expenses_title">
+                <input class="red" id="expenses_title">
                 <p>Please Enter Expense Amount</p>
-                <input id="expenses_amount">
+                <input class="red" id="expenses_amount">
                 <button id="calculate" onclick="calc()">Calculate</button>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="row total">
+            <div class="col">
                 <h3>Budget</h3>
-                <h2 id="budget_amount">$0</h2>
+                <ion-icon name="cash-outline"></ion-icon>
+                <h2 class="budget" id="budget_amount">$0</h2>
                 <p id="title">Expense Title</p>
             </div>
-            <div>
+            <div class="col">
                 <h3>Expenses</h3>
+                <ion-icon name="card-outline"></ion-icon>
                 <h2 id="expenses_total">$0</h2>
                 <p id="expense_value">Expense Value</p>
-                <p>Expense Value</p>
+                
             </div>
-            <div>
+            <div class="col">
                 <h3>Balance</h3>
+                <ion-icon name="logo-usd"></ion-icon>
                 <h2 id="final_balance">$0</h2>
             </div>
         </div>
-
+    </div>
         <script src="mainpage.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>
