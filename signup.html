@@ -15,24 +15,22 @@
     <div class='content'>
     <div class='here'>Sign Up Here</div>
 
-
+    <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
 
     <div class='info'>
-            <input type='text' placeholder='Username' class='box info1' style="color: white;"></input>
-            <input type='email' placeholder='Email' class='box info1'></input>
-            <input type='password' placeholder='Password' class='box info1'></input>
-    
+        <form id="login-form">
+            <input type='text' name="username" class='box info1 login-form-field' id="username-field" placeholder="Username" style="color: white;"></input>
+            <input type='password' name="password" class='box info1 password login-form-field' placeholder="Password" id="password-field"></input>
+        </form>
     </div>
     <div>
-    <a href="login.html"><button class='button1 info1'>Create Account</button></a>
+    <a href="login.html"><button class='button1 info1' id="login-form-submit">Create Account</button></a>
 </div>
     </div>
     </div>
     </div>
-
-  
-
-
 
 </body>
 </html>
